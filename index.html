@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring Garden</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      color: #2e8b57;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #2e8b57;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .image-frame {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 6px solid #c8e6c9;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+    }
+
+    .image-frame img {
+      height: 100%;
+      width: auto;
+    }
+
+    @media (max-width: 700px) {
+      .image-frame {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🌸 Spring Garden 🌼</h1>
+  <nav>
+    <a href="./public/photoalbum.html">Photo Album</a>
+    <a href="./public/about.html">About My Garden</a>
+  </nav>
+  <hr />
+  <section class="content">
+    <div class="image-frame">
+      <img src="./public/Images/image9.jpeg" alt="Pink peony" />
+    </div>
+    <div class="image-frame">
+      <img src="./public/Images/image7.jpeg" alt="Another pink peony" />
+    </div>
+  </section>
+</body>
+
+</html>

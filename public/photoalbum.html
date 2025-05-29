@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garden Photo Album</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fff);
+      color: #333;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 0 10px;
+    }
+
+    .gallery li {
+      list-style: none;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .back-button {
+  text-align: center;
+  margin: 20px auto 40px;
+}
+
+.back-button button {
+  background: linear-gradient(to right, #81c784, #66bb6a);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button button:hover {
+  background: linear-gradient(to right, #66bb6a, #4caf50);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+  </style>
+</head>
+
+<body>
+  <h1>🌼 Garden Photo Album 🌼</h1>
+
+
+<div class="back-button">
+  <button onclick="history.back()">⬅ Back to Home</button>
+</div>
+
+
+  <ul class="gallery">
+    <li><img src="./Images/image1.jpeg" alt="Yellow peony in bloom"></li>
+    <li><img src="./Images/image2.jpeg" alt="Pink tulip in sunlight"></li>
+    <li><img src="./Images/image3.jpeg" alt="White daisy close-up"></li>
+    <li><img src="./Images/image4.jpeg" alt="Pink peony side view"></li>
+    <li><img src="./Images/image5.jpeg" alt="Garden flowers mixed colors"></li>
+  </ul>
+</body>
+
+</html>
